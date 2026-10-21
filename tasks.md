@@ -90,3 +90,13 @@ Vamos
   - Portar os diálogos e rotinas para que o NPC Rubik ofereça instalação cirúrgica de CBMs ao jogador.
 - [ ] **3.2 Ajustes no Autodoc & Anestesia:**
   - Avaliar opções de anestesia local vs geral nos Autodocs para CBMs avançados.
+
+---
+
+### Fase 4: Port do Sistema Completo de Z-Levels (Verticalidade 3D) do CDDA
+- [ ] **4.1 Visão e Renderização 3D:** Campo de visão vertical completo (renderização contínua de telhados, fossos e múltiplos andares simultâneos com transparência/sombreamento e oclusão de luz solar).
+- [ ] **4.2 Balística e Projéteis em 3D:** Disparos de armas e arremessos em múltiplos níveis verticais (atirar de telhados/torres para o térreo e vice-versa, lançar granadas por claraboias/janelas).
+- [ ] **4.3 Propagação de Som e Cheiro em 3D:** Som de passos e tiros atravessando pisos/tetos, e rastro de odor (scent) vertical para atração de zumbis entre andares.
+- [ ] **4.4 Movimentação, Queda e IA em 3D:** Física de queda com dano cinético realista, rapel, paraquedas, tetos desmoronando, e pathfinding de monstros navegando por escadas, rampas e saltando de bordas.
+- [ ] **4.5 Física de Veículos em Z-Levels:** Suporte a rampas e travessia de veículos entre andares (pontes elevadas, viadutos e garagens subterrâneas).
+
