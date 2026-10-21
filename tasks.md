@@ -10,7 +10,7 @@
 
 ## 📌 Situação Atual do Projeto
 
-O projeto foi estruturado com base no **Cataclysm: Bright Nights (CBN)** devido à sua melhor jogabilidade para dispositivos móveis, maior fluidez, menor microgerenciamento de inventário e desempenho superior na CPU. 
+O projeto foi estruturado com base no **Cataclysm: Bright Nights (CBN)** devido à sua melhor jogabilidade para dispositivos móveis, maior fluidez, menor microgerenciamento de inventário e desempenho superior na CPU.
 
 O repositório local está conectado ao fork oficial no GitHub (`TrevorSalazar66/CBN-SPD`) e configurado com o upstream para puxar atualizações futuras.
 
@@ -52,6 +52,7 @@ O repositório local está conectado ao fork oficial no GitHub (`TrevorSalazar66
 ## 📋 Próximas Tarefas em Sequência
 
 ### Fase 1: Atualização e Adaptação de Mutações
+
 - [ ] **1.1 Novas Categorias de Mutação:**
   - Portar para o CBN as categorias criadas no CDDA:
     - `BATRACHIAN` (Anfíbios / Rãs)
@@ -66,10 +67,12 @@ O repositório local está conectado ao fork oficial no GitHub (`TrevorSalazar66
   - Portar mutações temáticas dessas linhagens adaptando traços de anatomia para a estrutura estável de 12 membros do CBN.
 - [ ] **1.4 Validação:**
   - Rodar o linter de JSON (`./build-scripts/lint-json.sh`) e commitar as alterações.
+Vamos
 
 ---
 
 ### Fase 2: Análise e Atualização da Parte de Itens
+
 - [ ] **2.1 Auditoria Comparativa de Itens:**
   - Mapear novos tipos de itens adicionados ao CDDA (armas, armaduras, ferramentas, eletrônicos, novos materiais).
 - [ ] **2.2 Filtragem e Seleção:**
@@ -82,28 +85,8 @@ O repositório local está conectado ao fork oficial no GitHub (`TrevorSalazar66
 ---
 
 ### Fase 3: Mecânica de Instalação de CBMs (Exodii / Rubik)
+
 - [ ] **3.1 Diálogos e Serviço de Rubik:**
   - Portar os diálogos e rotinas para que o NPC Rubik ofereça instalação cirúrgica de CBMs ao jogador.
 - [ ] **3.2 Ajustes no Autodoc & Anestesia:**
   - Avaliar opções de anestesia local vs geral nos Autodocs para CBMs avançados.
-
----
-
-### Fase 4: Sistema Completo de Z-Levels (3D Vertical) do CDDA
-- [ ] **4.1 Visão Vertical e Campo de Visão 3D (3D FOV & Iluminação):**
-  - Portar e refinar o sistema de visão 3D contínua do CDDA, permitindo enxergar criaturas, terrenos e itens em andares inferiores (através de telhados, escadas, grades, fossos e pisos transparentes) e superiores.
-  - Ajustar a iluminação 3D para propagação de luz natural/solar e lanternas através de aberturas entre níveis.
-- [ ] **4.2 Balística e Combate à Distância Vertical (3D Projectiles):**
-  - Adaptar a física de projéteis (`ballistics.cpp` / `projectile.cpp`) para permitir mirar e disparar armas de fogo, arcos e arremesso em alvos em diferentes Z-levels (de telhados para o chão e vice-versa).
-  - Incluir cálculo de obstrução por pisos/tetos e vantagem de altura.
-- [ ] **4.3 Propagação Vertical de Som e Cheiro (3D Audio & Scent):**
-  - Propagação realista de som entre andares (sons abafados por lajes sólidas, limpos através de escadarias e vãos abertos).
-  - Atualização do mapa de odores para que monstros consigam rastrear o jogador em 3D (subindo escadas e rampas).
-- [ ] **4.4 Física de Queda, Gravidade e Colapso Estrutural:**
-  - Dinâmica de queda de criaturas e detritos entre múltiplos níveis Z, com cálculo de dano por impacto proporcional à altura e suporte a itens/traços de queda suave.
-  - Colapso vertical de construções caso o suporte do piso inferior seja destruído.
-- [ ] **4.5 Rampas e Movimentação de Veículos entre Z-Levels:**
-  - Suporte a veículos transitando por rampas entre andares (ex: garagens de vários pavimentos, pontes elevadas).
-- [ ] **4.6 Otimização de Performance para Mobile:**
-  - Garantir que a renderização e caches de submapas 3D sejam otimizados para manter o consumo de bateria e FPS estáveis no Android.
-
